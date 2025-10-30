@@ -16,5 +16,6 @@ if st.button("Click Me"):
         rate = data["rates"][target_Currency]
         converted = (rate * amount,)
         st.success(f"{amount} INR = {converted[0]:.2f} {target_Currency}")
+        # format specifier, will Activate through, : and we can specify roundUp Value
     else:
         st.write("Request Failed Due to Bad Server ,'404'....Try Againn ...")
